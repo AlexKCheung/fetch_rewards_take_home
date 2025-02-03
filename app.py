@@ -7,39 +7,6 @@
 # POST: /receipts/process
 # GET: /receipts/{id}/points
 
-# from https://stackoverflow.com/questions/25491090/how-to-use-python-to-execute-a-curl-command
-# curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' 
-
-# HOW TO RUN: 
-# curl -X POST http://localhost:5000/receipts/process -H "Content-Type: application/json" --data '{
-#   "retailer": "Target",
-#   "purchaseDate": "2022-01-01",
-#   "purchaseTime": "13:01",
-#   "items": [
-#     {
-#       "shortDescription": "Mountain Dew 12PK",
-#       "price": "6.49"
-#     },{
-#       "shortDescription": "Emils Cheese Pizza",
-#       "price": "12.25"
-#     },{
-#       "shortDescription": "Knorr Creamy Chicken",
-#       "price": "1.26"
-#     },{
-#       "shortDescription": "Doritos Nacho Cheese",
-#       "price": "3.35"
-#     },{
-#       "shortDescription": "   Klarbrunn 12-PK 12 FL OZ  ",
-#       "price": "12.00"
-#     }
-#   ],
-#   "total": "35.35"
-# }'
-
-# returns an id
-
-# curl http://localhost:5000/receipts/COPY_PASTE_ID_HERE/points
-
 
 # using flask for apis 
 from flask import Flask, request, jsonify
