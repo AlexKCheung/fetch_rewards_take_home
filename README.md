@@ -1,11 +1,14 @@
+# Fetch Rewards take home assignment
+https://github.com/fetch-rewards/receipt-processor-challenge 
+
 
 ## HOW TO RUN: 
-### One: run the app.py. 
-python3 app.py
+### Make sure you have flask, by using this command: pip install Flask  
+### One: run the program 
+python3 app.py  
 
 ### Two: in terminal, send the POST via curl
-
-### you can do this either via sending a json file or manually typing the whole json out
+Two Methods: either via sending a json file or manually typing the whole json out
 
 curl -X POST http://localhost:5000/receipts/process -H "Content-Type: application/json" --data /morning-receipt.json
 
